@@ -1,0 +1,204 @@
+/*======================Шрифты======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap');
+
+/*======================Обнуление======================*/
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: #ADD8E6;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Russo One', sans-serif;*/
+    font-size: 16px;
+    color: #000;
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/*======================Стили======================*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clicker {
+    margin:  0 0 50px 0;
+    text-align: center;
+}
+
+.clicker__title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    line-height: 1.1;
+    padding-bottom: 40px;
+}
+
+.clicker__num {
+    display: inline-block;
+    font-size: 120px;
+    color: inherit;
+    line-height: 1;
+}
+
+.clicker__buttons {
+    margin: 50px 0 0 0;
+}
+
+.clicker__btn {
+    width: 250px;
+    height: 80px;
+    padding: 0;
+    margin: 0 8px 35px 8px;
+    background: #6c0b7a;
+    color: #fff;
+    font-size: 35px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.clicker__btn:hover {
+    background: rgba(85, 8, 96, 1);
+}
+
+.clicker__reset {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 80px;
+    padding: 0;
+    background: #795548;
+    color: #fff;
+    font-size: 35px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.clicker__reset:hover {
+    background: #000;
+}
+
+.info__title {
+    margin-bottom: 40px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+    line-height: 1.1;
+}
+.info__list {
+    font-size: 20px;
+    color: #000;
+   
+}
+.info__item {
+    padding-bottom: 10px;
+}
+
+.info__item:last-child {
+    padding-bottom: 0;
+}
+
+/*======================Медиа-запросы======================*/
+
+@media (max-width: 582px) {
+
+    .clicker {
+        margin: 0 0 35px 0;
+    }
+
+    .clicker__title {
+        font-size: 42px;
+    }
+
+    .clicker__btn {
+        width: 195px;
+    }
+
+    .info__title {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .info__list {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 456px) {
+    .clicker__title {
+        padding-bottom: 25px;
+    }
+
+    .clicker__buttons {
+        margin: 35px 0 0 0;
+    }
+
+    .clicker__btn {
+        max-width: 180px;
+    }
+
+    .clicker__reset {
+        width: 100%;
+    }
+
+    .info__title {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 428px) {
+    .clicker__title {
+       font-size: 30px;
+    }
+
+    .clicker__buttons {
+        margin: 35px 0 0 0;
+    }
+
+    .clicker__btn {
+        max-width: 80px;
+    }
+
+    .clicker__reset {
+        width: 100%;
+    }
+
+    .info__title {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .info__list {
+        font-size: 16px;
+    }
+}

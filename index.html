@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Счетчик кликов</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="clicker">
+            <h1 class="clicker__title">Самый простой счётчик кликов в мире!</h1>
+            <span class="clicker__num" id="num">0</span>
+            <div class="clicker__buttons">
+                <button class="clicker__btn" type="button" data-plus="plus">+</button>
+                <button class="clicker__btn" type="button" data-minus="minus">-</button>
+                <button class="clicker__reset" type="button" data-reset="reset">Сброс</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <h4 class="info__title">Как он работает?</h4>
+            <ol class="info__list">
+                <li class="info__item">
+                    Нажми <b>"+"</b>, чтобы увеличить на единицу
+                </li>
+                <li class="info__item">
+                    Нажми <b>"-"</b>, чтобы уменьшить на единицу
+                </li>
+                <li class="info__item">
+                    Нажми <b>"Сброс"</b>, чтобы обнулить счётчик
+                </li>
+            </ol>
+        </div>
+    </div><!--/.container-->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
